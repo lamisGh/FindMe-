@@ -17,6 +17,7 @@
 		7CCD09FB1F431C5D00A82B87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */; };
 		7CCD09FD1F43333400A82B87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD09FC1F43333400A82B87 /* User.swift */; };
 		7CCD09FF1F444B7A00A82B87 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */; };
+		7CCD0A011F44769700A82B87 /* UserSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD0A001F44769700A82B87 /* UserSwift.swift */; };
 		C4DDD49068FD402B916B8980 /* Pods_FindMe_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0DB3A36A82FC5F2CECAC25 /* Pods_FindMe_.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CCD09FC1F43333400A82B87 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		7CCD0A001F44769700A82B87 /* UserSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSwift.swift; sourceTree = "<group>"; };
 		8475FD1224227E92CB146B04 /* Pods-FindMe!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe!.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!.release.xcconfig"; sourceTree = "<group>"; };
 		BD0DB3A36A82FC5F2CECAC25 /* Pods_FindMe_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMe_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7CCA6D4E06F768327186D4 /* Pods-FindMe!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */,
 				7CCD09F81F43139E00A82B87 /* LoginViewController.swift */,
 				7CCD09FC1F43333400A82B87 /* User.swift */,
+				7CCD0A001F44769700A82B87 /* UserSwift.swift */,
 				7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */,
 				7CCD09E61F42EE2900A82B87 /* Assets.xcassets */,
 				7CCD09EB1F42EE2900A82B87 /* Info.plist */,
@@ -252,6 +255,7 @@
 			files = (
 				7CCD09FF1F444B7A00A82B87 /* CreateAccountViewController.swift in Sources */,
 				7CCD09FD1F43333400A82B87 /* User.swift in Sources */,
+				7CCD0A011F44769700A82B87 /* UserSwift.swift in Sources */,
 				7CCD09F91F43139E00A82B87 /* LoginViewController.swift in Sources */,
 				7CCD09E21F42EE2900A82B87 /* ViewController.swift in Sources */,
 				7CCD09E01F42EE2900A82B87 /* AppDelegate.swift in Sources */,

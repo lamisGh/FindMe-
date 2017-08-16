@@ -183,8 +183,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cHb-iG-ldV">
+                                <rect key="frame" x="130" y="380" width="115" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Famale"/>
+                                </segments>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wP-lI-KBH">
-                                <rect key="frame" x="139" y="354" width="72" height="39"/>
+                                <rect key="frame" x="151" y="470" width="72" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27450980390000002" green="0.67843137249999996" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -192,6 +200,7 @@
                                     <color key="titleColor" red="0.99738486400000004" green="1" blue="0.99438108110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="Save:" destination="ML6-Dm-KCQ" eventType="touchUpInside" id="SNG-XO-UD2"/>
                                     <segue destination="L7L-q2-rxA" kind="show" identifier="Save" id="n4a-IW-FdF"/>
                                 </connections>
                             </button>
@@ -214,6 +223,12 @@
                             <constraint firstItem="z8e-DA-M4G" firstAttribute="top" secondItem="g53-Cp-v3x" secondAttribute="top" id="zIS-L6-fri"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EmailTextField" destination="g53-Cp-v3x" id="Ffc-1a-TZa"/>
+                        <outlet property="FirstTextField" destination="hKY-Ot-dxn" id="BQG-xq-KYT"/>
+                        <outlet property="LastTextField" destination="hME-c7-Yof" id="6WD-dr-Xiq"/>
+                        <outlet property="PasswordTextField" destination="vGx-qJ-Y9T" id="iGF-e3-TxM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7f-hb-mR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
