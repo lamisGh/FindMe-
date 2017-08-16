@@ -12,6 +12,12 @@
 		7CCD09E51F42EE2900A82B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09E31F42EE2900A82B87 /* Main.storyboard */; };
 		7CCD09E71F42EE2900A82B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09E61F42EE2900A82B87 /* Assets.xcassets */; };
 		7CCD09EA1F42EE2900A82B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09E81F42EE2900A82B87 /* LaunchScreen.storyboard */; };
+		7CCD09F71F4311AC00A82B87 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09F61F4311AC00A82B87 /* Login.storyboard */; };
+		7CCD09F91F43139E00A82B87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD09F81F43139E00A82B87 /* LoginViewController.swift */; };
+		7CCD09FB1F431C5D00A82B87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */; };
+		7CCD09FD1F43333400A82B87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD09FC1F43333400A82B87 /* User.swift */; };
+		7CCD09FF1F444B7A00A82B87 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */; };
+		C4DDD49068FD402B916B8980 /* Pods_FindMe_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0DB3A36A82FC5F2CECAC25 /* Pods_FindMe_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		7CCD09E61F42EE2900A82B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD09E91F42EE2900A82B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCD09EB1F42EE2900A82B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCD09F61F4311AC00A82B87 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7CCD09F81F43139E00A82B87 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CCD09FC1F43333400A82B87 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8475FD1224227E92CB146B04 /* Pods-FindMe!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe!.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!.release.xcconfig"; sourceTree = "<group>"; };
+		BD0DB3A36A82FC5F2CECAC25 /* Pods_FindMe_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMe_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7CCA6D4E06F768327186D4 /* Pods-FindMe!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DDD49068FD402B916B8980 /* Pods_FindMe_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351F069F4914A0EFCE60B803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD0DB3A36A82FC5F2CECAC25 /* Pods_FindMe_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CCD09D31F42EE2900A82B87 = {
 			isa = PBXGroup;
 			children = (
 				7CCD09DE1F42EE2900A82B87 /* FindMe! */,
 				7CCD09DD1F42EE2900A82B87 /* Products */,
+				BD26F942C833A621D56598A6 /* Pods */,
+				351F069F4914A0EFCE60B803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +81,35 @@
 			children = (
 				7CCD09DF1F42EE2900A82B87 /* AppDelegate.swift */,
 				7CCD09E11F42EE2900A82B87 /* ViewController.swift */,
-				7CCD09E31F42EE2900A82B87 /* Main.storyboard */,
+				7CCD09FA1F431C5D00A82B87 /* GoogleService-Info.plist */,
+				7CCD09F81F43139E00A82B87 /* LoginViewController.swift */,
+				7CCD09FC1F43333400A82B87 /* User.swift */,
+				7CCD09FE1F444B7A00A82B87 /* CreateAccountViewController.swift */,
 				7CCD09E61F42EE2900A82B87 /* Assets.xcassets */,
-				7CCD09E81F42EE2900A82B87 /* LaunchScreen.storyboard */,
 				7CCD09EB1F42EE2900A82B87 /* Info.plist */,
+				7CCD09F51F43114000A82B87 /* Storyboard */,
+				7CCD09F61F4311AC00A82B87 /* Login.storyboard */,
 			);
 			path = "FindMe!";
+			sourceTree = "<group>";
+		};
+		7CCD09F51F43114000A82B87 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7CCD09E31F42EE2900A82B87 /* Main.storyboard */,
+				7CCD09E81F42EE2900A82B87 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			path = ../Storyboard;
+			sourceTree = "<group>";
+		};
+		BD26F942C833A621D56598A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CCA6D4E06F768327186D4 /* Pods-FindMe!.debug.xcconfig */,
+				8475FD1224227E92CB146B04 /* Pods-FindMe!.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCD09EE1F42EE2900A82B87 /* Build configuration list for PBXNativeTarget "FindMe!" */;
 			buildPhases = (
+				3EB3BC09072C9E3319C2DCD3 /* [CP] Check Pods Manifest.lock */,
 				7CCD09D81F42EE2900A82B87 /* Sources */,
 				7CCD09D91F42EE2900A82B87 /* Frameworks */,
 				7CCD09DA1F42EE2900A82B87 /* Resources */,
+				798A9E9DA0471DF5706CBEBA /* [CP] Embed Pods Frameworks */,
+				75D5FF99F554B9E7E1CFDEA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,7 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCD09F71F4311AC00A82B87 /* Login.storyboard in Resources */,
 				7CCD09EA1F42EE2900A82B87 /* LaunchScreen.storyboard in Resources */,
+				7CCD09FB1F431C5D00A82B87 /* GoogleService-Info.plist in Resources */,
 				7CCD09E71F42EE2900A82B87 /* Assets.xcassets in Resources */,
 				7CCD09E51F42EE2900A82B87 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +184,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EB3BC09072C9E3319C2DCD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMe!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75D5FF99F554B9E7E1CFDEA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		798A9E9DA0471DF5706CBEBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMe!/Pods-FindMe!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CCD09D81F42EE2900A82B87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCD09FF1F444B7A00A82B87 /* CreateAccountViewController.swift in Sources */,
+				7CCD09FD1F43333400A82B87 /* User.swift in Sources */,
+				7CCD09F91F43139E00A82B87 /* LoginViewController.swift in Sources */,
 				7CCD09E21F42EE2900A82B87 /* ViewController.swift in Sources */,
 				7CCD09E01F42EE2900A82B87 /* AppDelegate.swift in Sources */,
 			);
@@ -150,6 +267,7 @@
 				7CCD09E41F42EE2900A82B87 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../FindMe!";
 			sourceTree = "<group>";
 		};
 		7CCD09E81F42EE2900A82B87 /* LaunchScreen.storyboard */ = {
@@ -158,6 +276,7 @@
 				7CCD09E91F42EE2900A82B87 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "../FindMe!";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +377,7 @@
 		};
 		7CCD09EF1F42EE2900A82B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7CCA6D4E06F768327186D4 /* Pods-FindMe!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "FindMe!/Info.plist";
@@ -270,6 +390,7 @@
 		};
 		7CCD09F01F42EE2900A82B87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8475FD1224227E92CB146B04 /* Pods-FindMe!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "FindMe!/Info.plist";
@@ -299,6 +420,7 @@
 				7CCD09F01F42EE2900A82B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

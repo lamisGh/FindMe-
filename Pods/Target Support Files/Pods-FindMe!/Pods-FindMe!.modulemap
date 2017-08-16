@@ -1,0 +1,6 @@
+framework module Pods_FindMe_ {
+  umbrella header "Pods-FindMe!-umbrella.h"
+
+  export *
+  module * { export * }
+}
